@@ -1,0 +1,5 @@
+package com.dshivana.entity;
+
+public class Student {
+
+}

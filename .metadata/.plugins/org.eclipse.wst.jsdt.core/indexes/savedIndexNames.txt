@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Videos\SBMS\27-SBMS\workspace-recap-us\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+159620041.index
+2719767729.index
+4162977610.index
+2475346566.index
+1454371825.index
+3190037014.index

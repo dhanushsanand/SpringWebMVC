@@ -1,0 +1,7 @@
+spring.application.name=04-Spring-Web-MVC-Student-Reg-Form
+spring.mvc.view.prefix=/views/
+spring.mvc.view.suffix=.jsp
+spring.datasource.url=jdbc:mem:h2:test
+spring.datasource.username=ds
+spring.datasource.password=ds
+spring.datasource.driver-class-name=org.h2.Driver

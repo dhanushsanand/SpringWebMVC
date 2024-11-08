@@ -1,0 +1,5 @@
+spring.application.name=02-Spring-Web-MVC-Client-Data
+spring.mvc.view.prefix=/views/
+spring.mvc.view.suffix=.jsp
+server.servlet.context-path=/webapp
+server.port=5050

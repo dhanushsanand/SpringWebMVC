@@ -1,0 +1,5 @@
+package com.dshivana.app.binding;
+
+public class User {
+
+}

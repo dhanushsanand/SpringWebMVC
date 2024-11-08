@@ -1,0 +1,18 @@
+package com.dshivana.app.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class CarController {
+	
+	@GetMapping("/car/{carID}")
+	public ModelAndView getCarColor(@PathVariable Integer carID) {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("Message","This is Suzuki with ID:"+carID);
+		modelAndView.setViewName("index");
+		return modelAndView;
+	}
+}

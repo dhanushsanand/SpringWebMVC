@@ -1,0 +1,37 @@
+package com.dshivana.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.dshivana.binding.Student;
+
+@Controller
+public class StudentController {
+
+	@GetMapping("/")
+	public String getStudentRegistrationPage(Model model, Student student) 
+	{
+		initializeData(model);
+		model.addAttribute("student", student);
+		return "index";
+	}
+	
+	private void initializeData(Model model) {
+		List<String> coursesList = new ArrayList<>();
+		coursesList.add("Java");
+		coursesList.add("Python");
+		coursesList.add("AWS");
+		
+		List<String> timingsList = new ArrayList<>();
+		timingsList.add("Morning");
+		timingsList.add("Afternoon");
+		timingsList.add("Evening");
+		
+		model.addAttribute("timings", timingsList);
+		model.addAttribute("courses", coursesList);
+	}
+}

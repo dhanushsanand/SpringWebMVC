@@ -1,0 +1,5 @@
+package com.dshivana.repository;
+
+public interface StudentRepository {
+
+}
